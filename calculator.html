@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="navigationbar">
+        <nav>
+          <img class="Logo" img src="image.png"></img>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">Minhyeong Lee</label>
+          <ul>
+              <li><a class="active" href="file:///C:/Users/4755h/.vscode/example.html">Home</a></li>
+              <li><a href="file:///C:/Users/4755h/.vscode/Portfolio.html">Portfolio</a></li>
+              <li><a href="file:///C:/Users/4755h/.vscode/typing%20text.html">About me</a></li>
+          </ul>
+        </nav>
+    </div> 
+    <div class="calculator">
+        <form name="forms">
+
+            <input type="text" name="output" readonly>
+            <input type="botton" class="clear" value="C" onclick="document.forms.output.value =' '">
+            <input type="botton" class="operator" value="/" onclick="document.forms.output.value +='/'">
+            <input type="botton" value="1" onclick="document.forms.output.value +='1'">
+            <input type="botton" value="2" onclick="document.forms.output.value +='2'">
+            <input type="botton" value="3" onclick="document.forms.output.value +='3'">
+            <input type="botton" class="operator" value="*" onclick="document.forms.output.value +='*'">
+            <input type="botton" value="4" onclick="document.forms.output.value +='4'">
+            <input type="botton" value="5" onclick="document.forms.output.value +='5'">
+            <input type="botton" value="6" onclick="document.forms.output.value +='6'">
+            <input type="botton" class="operator" value="+" onclick="document.forms.output.value +='+'">
+            <input type="botton" value="7" onclick="document.forms.output.value +='7'">
+            <input type="botton" value="8" onclick="document.forms.output.value +='8'">
+            <input type="botton" value="9" onclick="document.forms.output.value +='9'">
+            <input type="botton" class="operator" value="-" onclick="document.forms.output.value +='-'">
+            <input type="botton" class="dot" value="." onclick="document.forms.output.value +='.'">
+            <input type="botton" value="0" onclick="document.forms.output.value +='0'">
+            <input type="botton" class="operator result"value="=" onclick="document.forms.output.value =eval(document.forms.output.value)">
+        </form>
+    </div>
+        
+</body>
+</html>

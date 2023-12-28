@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Box Banner</title>
+    <link rel="stylesheet" href="flip-box-banner.css">
+</head> 
+<body>
+    <div class =body1>
+        <div class="navigationbar">
+            <nav>
+              <img class="Logo" img src="image.png"></img>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">Minhyeong Lee</label>
+              <ul>
+                  <li><a class="active" href="file:///C:/Users/4755h/.vscode/example.html">Home</a></li>
+                  <li><a href="file:///C:/Users/4755h/.vscode/Portfolio.html">Portfolio</a></li>
+                  <li><a href="file:///C:/Users/4755h/.vscode/typing%20text.html">About me</a></li>
+              </ul>
+            </nav>
+        </div> 
+    </div>
+    <div class="body2">
+        <div class="container">
+            <div class="cube">
+                <img src="pexels-goochie-poochie-grooming-3361739.png" alt="강아지 이미지1" width="120" height="120">
+                <img src="pexels-samson-katt-5257587.png" alt="강아지 이미지2" width="120" height="120">
+                <img src="pexels-anna-shvets-4588435.png" alt="강아지 이미지3" width="120" height="120">
+                <img src="pexels-tanika-3687770.png" alt="강아지 이미지3"width="120" height="120">
+            </div>
+        </div>
+    </div>
+    <script>
+        let deg=0;
+        setInterval(()=>{
+            deg= deg-90;
+            document.querySelector(".cube").style.transform
+            = 'rotatex(' +deg+'deg)'},1000);
+    </script>
+</body>
+</html>
